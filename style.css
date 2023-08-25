@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.loader{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+.loader>div{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 8px solid #2c3e50 ;
+  border-top-color: #3498db;
+  border-radius:50%;
+  margin: auto;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: ani 1s infinite linear;
+}
+@keyframes ani{
+  100%{
+    transform: rotate(360deg);
+  }
+}
